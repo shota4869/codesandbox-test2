@@ -91,18 +91,3 @@ const deleteFromImcompleteList = (target) => {
   //押された削除ボタンの親タグを未完了リストから削除
   document.getElementById("incomplete-list").removeChild(target);
 };
-
-const createDiv = (text, li, completeflg) => {
-  //div生成
-  const div = document.createElement("div");
-  div.className = "list-row";
-
-  //pタグ生成
-  const p = document.createElement("p");
-  p.innerText = text;
-
-  div.appendChild(p);
-
-  li.appendChild(div);
-  return li;
-};
